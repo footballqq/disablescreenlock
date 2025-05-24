@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<navigation-bar title="截图控制演示" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 <view class="container">
   <view class="status-text">
     <text>{{statusText}}</text>
