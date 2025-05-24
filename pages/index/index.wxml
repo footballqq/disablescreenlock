@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="status-text">
+    <text>{{statusText}}</text>
+  </view>
+  
+  <view class="button-group">
+    <button type="primary" bindtap="disableScreenCapture" disabled="{{isScreenCaptureDisabled}}">禁用截图和录屏</button>
+    <button type="default" bindtap="enableScreenCapture" disabled="{{!isScreenCaptureDisabled}}">启用截图和录屏</button>
+  </view>
+  
+  <view class="description">
+    <text>说明：</text>
+    <text>1. 点击"禁用截图和录屏"按钮后，当前页面将无法截图和录屏</text>
+    <text>2. 点击"启用截图和录屏"按钮可恢复截图和录屏功能</text>
+    <text>3. 离开页面时会自动恢复截图和录屏功能</text>
+    <text>4. 此功能使用了wx.setVisualEffectOnCapture API</text>
+  </view>
+</view>
